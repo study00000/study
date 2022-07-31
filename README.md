@@ -1,1 +1,1 @@
-# study
+Let's study!
