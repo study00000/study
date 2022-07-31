@@ -1,0 +1,160 @@
+@charset 'utf-8';
+body{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+
+.dancing{
+	font-family: 'Dancing Script', cursive;
+}
+
+.peg{
+	font-family: 'Square Peg', cursive;
+}
+
+.study-txt{
+	display: inline-block;
+	background: linear-gradient(135deg,#264653,#2a9d8f,#e9c46a,#f4a261,#e76f51);
+	background: -webkit-linear-gradient(135deg,#264653,#2a9d8f,#e9c46a,#f4a261,#e76f51);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	-webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.all{
+	position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+	left: 50%;
+}
+
+select{
+	text-align: center;
+}
+
+.title{
+	margin: 0;
+	text-align: center;
+}
+
+.title p{
+	margin: 0;
+	display: inline-block;
+}
+
+.first-title{
+	background: linear-gradient(0deg,#264653,#2a9d8f,#e9c46a,#f4a261,#e76f51);
+	background: -webkit-linear-gradient(0deg,#264653,#2a9d8f,#e9c46a,#f4a261,#e76f51);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	padding-left: 1px;
+}
+
+.second-title{
+	background: linear-gradient(0deg,#ef476f,#ffd166,#06d6a0,#118ab2);
+	background: -webkit-linear-gradient(0deg,#ef476f,#ffd166,#06d6a0,#118ab2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.color-txt{
+	margin: 0;
+}
+
+span{
+	display: inline-block;
+	margin-top: 50px;
+	color: white;
+	background: linear-gradient(90deg,#F7CD39,#67BFD5);
+	padding: 4px 25px;
+	border-radius: 15px;
+	cursor: pointer;
+	border: gray 2px solid;
+}
+
+#time{
+	margin-top: 10px;
+}
+
+.h2{
+	background: linear-gradient(0deg,#264653,#2a9d8f,#e9c46a,#f4a261,#e76f51);
+	background: -webkit-linear-gradient(0deg,#264653,#2a9d8f,#e9c46a,#f4a261,#e76f51);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.none{
+	display: none;
+}
+
+/* PC */
+@media (min-width:1000px){
+	.title{
+		font-size: 10rem;
+	}
+
+	.color-txt{
+		font-size: 2rem;
+	}
+
+	.txt-one{
+		margin-bottom: 20px;
+	}
+
+	.txt-two{
+		margin: 20px 0;
+	}
+}
+
+/* pad */
+@media (min-width:421px) and (max-width:999px){
+	.title{
+		font-size: 10rem;
+	}
+
+	.color-txt{
+		font-size: 2rem;
+	}
+
+	select{
+		height: 24px;
+    	width: 114px;
+    	font-size: 16.7px;
+	}
+
+	.txt-one{
+		margin-bottom: 25px;
+	}
+
+	.txt-two{
+		margin: 24px 0;
+	}
+}
+
+/* mobile */
+@media (max-width:420px){
+	.title{
+		font-size: 7.5rem;
+	}
+
+	.color-txt{
+		font-size: 1.75rem;
+	}
+
+	.txt-one{
+		margin-bottom: 12px;
+	}
+
+	.txt-two{
+		margin: 10px 0;
+	}
+
+	#time{
+		margin-top: 15px;
+	}
+}
