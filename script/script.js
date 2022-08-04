@@ -18,8 +18,16 @@ $(function(){
     	document.body.animate({
  	    	backgroundColor: [start_color, end_color],
  		}, {
-  	    	iterations: Infinity,
+  	    	iterations: 1,
   	    	duration: parseInt(time),
  		});
+		 setTimeout(function(){
+			 $('.study-txt').text("End study!").animate({
+				 opacity: 1
+			 },{
+				iterations: 1,
+				duration: 500
+			 },500)
+		 },parseInt(time))
 }, { passive: true });
 })
